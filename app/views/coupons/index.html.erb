@@ -1,0 +1,3 @@
+<% @coupons.reverse.each do |coupon_obj| %>
+  <p><%= link_to coupon_obj.coupon_code, coupon_path(coupon_obj) %> - <%= coupon_obj.store %></p>
+<% end %>
